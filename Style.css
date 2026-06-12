@@ -1,0 +1,130 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.navbar{
+    position: fixed;
+    width: 101%;
+    height: 100px;
+    margin: 5px; 
+    padding: 30px 20px; 
+    background-color: rgb(12, 219, 9); color: rgb(8, 0, 0);
+    align-items: center;
+    /* border-radius: 10px; */
+    top: 0;
+ }
+ .navbar ul {
+   display: flex;
+   justify-content: flex-end;
+   list-style: none;
+   gap: 30px;
+    
+ }
+ .navbar a{
+    text-decoration: none;
+    color: rgb(15, 1, 1);
+    font-size: 18px;
+    margin: 0px;
+ }
+
+/* --- HERO SECTION STYLES --- */
+.hero-section {
+    position: relative;
+    height: 80vh; /* Wuxuu daboolayaa 80% dhererka shaashadda */
+    background-image: url('zamzam.jpg'); /* Ku beddel sawirka gabadha qalinjabinaysa */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Qoraalka wuxuu keenayaa dhexda tooska ah */
+    padding: 0 10%;
+    margin-top: 20%;
+}
+
+/* Lakabka madow ee sawirka dusha ka saaran si qoraalku u akhrismo */
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 600px;
+    font-family: sans-serif;
+}
+
+.hero-subtext {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+
+/* --- ABOUT SECTION STYLES --- */
+.about-section {
+    padding: 60px 10%;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+/* Isticmaalka Grid si labada dhinac loo kala saaro */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Bidixdu waa 1 qaybood, Midigtu waa 2 qaybood */
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.about-tag {
+    color: #3a86c8; /* Midabka buluugga fudud ee qoraalka sare */
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-heading {
+    color: #111638; /* Midabka buluugga madow (Dark Navy) */
+    font-size: 2.5rem;
+    margin-top: 5px;
+    font-weight: 800;
+}
+
+.about-desc {
+    color: #666; /* Midabka qoraalka yar */
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    color: #111638;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #111638;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+/* Qaabaynta Sawirka Beeraha */
+.about-image-wrapper {
+    width: 100%;
+    border-radius: 8px; /* Waxay soo wareejinaysaa geesaha sawirka */
+    overflow: hidden;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
